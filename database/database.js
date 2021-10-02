@@ -7,7 +7,7 @@ let books = [
         language: "en",
         Page_num:250,
         Author:[1,2],
-        publication: 1,
+        publication: [1],
         category:["tech","programming","education",]
     },
     {
@@ -23,12 +23,12 @@ let books = [
   ];
   let authors = [
     {
-        id:1,
+        id: 1,
         name:"Gagan",
         books:["12345Books","1234567Book2"],
     },
     {
-        id:2,
+        id: 2,
         name:"ElonMusk",
         books:["12345Book"],
     }
@@ -50,5 +50,5 @@ let books = [
         books:[],
     },
   ];
-  module.exports = {books,authors,publications};
+  module.exports = {books , authors , publications};
   

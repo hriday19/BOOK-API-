@@ -6,7 +6,13 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 
-const database = require("./database");
+// Database
+const database = require("./database/database");
+
+//Models
+const BookModels = require("./database/books");
+const AuthorModels = require("./database/author");
+const PublicationModels = require("./database/publication");
 
 const booky = express();
 //configuration
@@ -17,12 +23,12 @@ console.log(process.env.MONGO_URL);
 // establish database connection
 mongoose
 .connect(process.env.MONGO_URL,
-{
- // useNewUrlParser: true,
+
+ //{ useNewUrlParser: true,
   //useUnifiedTopology: true,
   //useFindAndModify: false,
-  // useCreateIndex: true,
-  })
+  // useCreateIndex: true,}
+  )
  .then(() => console.log("connection established!!!!"));
 
 
