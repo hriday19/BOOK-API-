@@ -1,5 +1,5 @@
 
-let books = [
+const books = [
     {
         ISBN: "12345Books",
         title: "Testla",
@@ -21,10 +21,10 @@ let books = [
         category:["tech","programming","education"]
     }
   ];
-  let authors = [
+  const authors = [
     {
         id: 1,
-        name:"Gagan",
+        name:"Hriday",
         books:["12345Books","1234567Book2"],
     },
     {
